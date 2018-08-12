@@ -89,7 +89,7 @@ author:
   avatar           : "/assets/images/profile.jpg"
   bio              : "System Engineer"
   location         : "Tokyo"
-  email            : "kyoonytime31@gmail.com"
+  email            : #"kyoonytime31@gmail.com"
   uri              :
   home             : "#" # null (default), "absolute or relative url to link to author home"
   bitbucket        :
@@ -104,7 +104,7 @@ author:
   keybase          :
   instagram        : "kyoonytime31"
   lastfm           :
-  linkedin         : "hakkyoon-jung-6286a8a2"
+  linkedin         : #hakkyoon-jung-6286a8a2"
   pinterest        :
   soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
