@@ -21,7 +21,7 @@ CPU, 메모리,I/O, 네트워크등 시스템과 관련된 사용상태정보를
 `$ man sar` 로 확인하면 아래와 같은 설명이있다
 
 ```
-Percentage  of memory needed for current workload in relation to the total amount of memory (RAM+swap).  
+Percentage  of memory needed for current workload in relation to the total amount of memory (RAM+swap).
 This number may be greater than 100% because the kernel usually overcommits memory.
 ```
 
