@@ -5,7 +5,7 @@ tags: DNS HTTPS SNI
 category: web
 ---
 
-# 지금까지의 DNS의 문제점
+## 지금까지의 DNS의 문제점
 인터넷상에서의 통신의 대부분은 웹브라우져를 통해서 이루어진다.
 
 보안 향상을 위해 Google, Firefox같은 브라우져 제공업체가 평문통신을하는 HTTP 에서 암호통신을하는 HTTPS로 전환을 권장하고 최근 대부분의 서비스가 HTTPS 대응을 하여 도청, 변조등의 문제를 해결하고있다
@@ -14,7 +14,7 @@ category: web
 
 그것을 방지하기위한 수단이 DNS over HTTPS이다.
 
-# DNS over HTTPS란
+## DNS over HTTPS란
 DNS에 통신하는 내용을 json형식으로 맵핑한 테이터를 HTTPS프로토콜로 통신하는 수단
 
 지금까지 DNS서버의 UDP포트(53)로 이루어지던 DNS 도메인확인을 TCP포트(443)로 HTTPS(HTTP/2 over TLS)통신으로 이루어지는 프로토콜이다.
@@ -58,7 +58,7 @@ content-type에 application/dns-message가 지정되이있다.
 POST로 요청과 동일하게 DNS response메세지는 바이너리값이다.
 
 
-# DNS over TLS와의 차이
+## DNS over TLS와의 차이
 DNS over HTTPS외에도 DNS를 암호화된 경로로 안전하게 확인하는 방법으로 DNS over TLS가 있다
 RFC7858, RFC8310로 표준화 되어있다.
 
@@ -67,7 +67,7 @@ DNS over HTTPS는 일반적인 HTTPS통신과 같은 443포트를 사용하지�
 
 - [What is the difference between DNS over TLS & DNS over HTTPS? ](https://www.thesslstore.com/blog/dns-over-tls-vs-dns-over-https/)
 
-# DNS만 암호화하는걸로는 부족하다
+## DNS만 암호화하는걸로는 부족하다
 도메인 확인을 위해 DNS over HTTPS를 사용하고 Web사이트에 접속하기위해 HTTPS를 사용하면 도청, 변조등의 문제를 해결할 수 있는가?
 
 현재 도청, 변조는 해결이 가능하지만 HTTPS접속시 SNI라는 기능을 이용하여 아래와 같은 행위가 가능하다 
